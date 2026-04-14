@@ -44,6 +44,11 @@ Notes_Application/
 - Backend: Node.js + Express
 - Database: PostgreSQL
 
+## Live URLs
+
+- Frontend: [https://markdown-notes-virid.vercel.app](https://markdown-notes-virid.vercel.app)
+- Backend: [https://markdown-notes-2ylb.onrender.com](https://markdown-notes-2ylb.onrender.com)
+
 ## Backend Setup
 
 1. Go to the backend folder:
@@ -70,6 +75,8 @@ Notes_Application/
    DATABASE_SSL=false
    DATABASE_SSL_REJECT_UNAUTHORIZED=true
    ```
+
+   For production deployment, set `CLIENT_URL=https://markdown-notes-virid.vercel.app`.
 
 4. Create the PostgreSQL database:
 
@@ -108,6 +115,8 @@ Notes_Application/
    VITE_ACCESS_TOKEN_COOKIE=notes_access_token
    VITE_PROXY_TARGET=http://localhost:3000
    ```
+
+   For production deployment, use [frontend/.env.production](/Users/madhu/Notes_Application/frontend/.env.production:1), which points to `https://markdown-notes-2ylb.onrender.com/api`.
 
 4. Start the frontend:
 

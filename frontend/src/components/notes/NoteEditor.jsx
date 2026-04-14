@@ -1,3 +1,5 @@
+import { SaveIcon, TrashIcon } from "../common/Icons";
+
 function NoteEditor({
   content,
   onContentChange,
@@ -18,14 +20,16 @@ function NoteEditor({
             onClick={onSaveNote}
             disabled={!selectedId || saving}
           >
-            {saving ? "Saving..." : "Save"}
+            <SaveIcon />
+            <span>{saving ? "Saving..." : "Save"}</span>
           </button>
           <button
             className="danger-button hover-shadow-md"
             onClick={onDeleteNote}
             disabled={!selectedId}
           >
-            Delete
+            <TrashIcon />
+            <span>Delete</span>
           </button>
         </div>
       </div>
@@ -49,4 +53,3 @@ function NoteEditor({
 }
 
 export default NoteEditor;
-

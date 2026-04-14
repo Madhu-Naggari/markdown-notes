@@ -1,3 +1,5 @@
+import { PlusIcon } from "../common/Icons";
+
 function NotesSidebar({
   loading,
   notes,
@@ -13,7 +15,8 @@ function NotesSidebar({
           className="primary-button hover-shadow-md"
           onClick={onCreateNote}
         >
-          New Note
+          <PlusIcon />
+          <span>New Note</span>
         </button>
       </div>
 
@@ -42,4 +45,3 @@ function NotesSidebar({
 }
 
 export default NotesSidebar;
-

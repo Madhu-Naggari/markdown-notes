@@ -1,3 +1,5 @@
+import { MoonIcon, SunIcon } from "../common/Icons";
+
 function AppHeader({ description, onThemeToggle, theme, title, actions }) {
   return (
     <header className="topbar shadow-sm">
@@ -11,7 +13,7 @@ function AppHeader({ description, onThemeToggle, theme, title, actions }) {
           className="theme-button hover-shadow-md"
           onClick={onThemeToggle}
         >
-          {theme === "light" ? "Dark Mode" : "Light Mode"}
+          {theme === "light" ? <MoonIcon /> : <SunIcon />}
         </button>
         {actions}
       </div>
@@ -20,4 +22,3 @@ function AppHeader({ description, onThemeToggle, theme, title, actions }) {
 }
 
 export default AppHeader;
-
