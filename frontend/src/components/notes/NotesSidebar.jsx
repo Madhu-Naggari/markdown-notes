@@ -12,7 +12,7 @@ function NotesSidebar({
       <div className="sidebar-header">
         <h2>Your Notes</h2>
         <button
-          className="primary-button hover-shadow-md"
+          className="primary-button hover-shadow-md inline-flex items-center gap-2 whitespace-nowrap px-4 py-2"
           onClick={onCreateNote}
         >
           <PlusIcon />

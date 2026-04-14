@@ -1,0 +1,8 @@
+POST https://markdown-notes-2ylb.onrender.com/api/auth/register
+Content-Type: application/json
+
+{
+    "name": "testuser",
+    "email": "testuser@example.com",
+    "password": "testpassword"
+}
